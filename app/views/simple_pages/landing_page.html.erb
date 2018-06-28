@@ -1,2 +1,13 @@
-<h1>Featured Product:</h1>
-<%= @featured_product.name %>
+<div class="page-wrap">
+  <h1> Bar's Outdoor Shop</h1>
+  <h2> Welcome to a broad range of outdoor clothes and equipment!</h2>
+  <div class="container-fluid" id="image">
+    <%= image_tag("sundown.jpg", height: '400', width: '800', class: "img-responsive") %>
+  </div>
+  <h1>Featured Product:</h1>
+  <%= image_tag(@featured_product.image_url, class: "img-responsive", id: "products_images") %>
+  <h1><%= @featured_product.name %></h1>
+  <p><%= @featured_product.description %></p>
+  <p><%= @featured_product.colour %></p>
+  <p><%= @featured_product.price %></p>
+</div>
