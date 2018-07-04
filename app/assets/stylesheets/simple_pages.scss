@@ -28,16 +28,19 @@ h2 {
 
 html, body {
   height: 100%;
+  width: 100%;
 }
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  /*margin-bottom: -142px;*/
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
+
 .site-footer, .page-wrap:after {
   height: 142px;
 }
@@ -46,4 +49,17 @@ html, body {
   color: white;
   text-align: center;
   padding-top: 60px;
+}
+
+#contact_content {
+  padding: 60px;
+}
+
+#landing_page, #contact_page, #about_page {
+	background-image: url("landscape.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height:100%;
+  width: 100%;
 }
