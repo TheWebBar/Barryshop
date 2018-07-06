@@ -1,7 +1,7 @@
 <div class="row">
   <% @orders.each do |order| %>
     <div class="col-sm">
-      <h1>Order # <%= order.id %></h1>
+      <h1>Order # <%= link_to order.id, product_path(order.product.id)%></h1>
     </div><!-- /col -->
   <% end %>
 </div>
