@@ -13,30 +13,30 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <%= form.text_field :name, id:"products_name_field", class:"form-control" %>
+  </div><!-- end field -->
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+    <%= form.text_area :description, id:"products_description_field", class:"form-control" %>
+  </div><!-- end field -->
 
   <div class="field">
     <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
-  </div>
+    <%= form.text_field :image_url, id:"products_image_field", class:"form-control" %>
+  </div><!-- end field -->
 
   <div class="field">
     <%= form.label :colour %>
-    <%= form.text_field :colour %>
-  </div>
+    <%= form.text_field :colour, id:"products_colour_field", class:"form-control" %>
+  </div><!-- end field -->
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
-  </div>
+    <%= form.text_field :price, id:"products_price_field", class:"form-control" %>
+  </div><!-- end field -->
 
   <div class="actions">
     <%= form.submit %>
-  </div>
+  </div><!-- end actions -->
 <% end %>

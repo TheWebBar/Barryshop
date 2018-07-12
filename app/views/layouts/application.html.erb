@@ -37,6 +37,13 @@
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Orders", orders_path %></li>
           </ul>
+          <div class="navbar-right" id="search-field">
+            <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+              <!--<%= form.label :q, 'Search for:' %>-->
+              <%= form.text_field :q, id: 'q', value: params[:q] %>
+              <%= form.submit 'Search' %>
+            <% end %>
+          </div><!-- end search -->
         </div><!-- end nav -->
       </div><!-- end nav container -->
     </nav><!-- end navbar -->

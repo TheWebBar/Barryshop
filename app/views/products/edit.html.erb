@@ -1,6 +1,8 @@
 <h1>Editing Product</h1>
 
-<%= render 'form', product: @product %>
+<div class="container-fluid" id="edit_page">
+  <%= render 'form', product: @product %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+  <%= link_to 'Show', @product %> |
+  <%= link_to 'Back', products_path %>
+</div><!-- end edit_page -->
