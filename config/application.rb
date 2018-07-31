@@ -31,3 +31,5 @@ module Nameofapp
     config.generators.system_tests = nil
   end
 end
+
+config.assets.initialize_on_precompile = false
