@@ -1,3 +1,4 @@
 class Order < ApplicationRecord
   belongs_to :product
-end 
+  belongs_to :user
+end

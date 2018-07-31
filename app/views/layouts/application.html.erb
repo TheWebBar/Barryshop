@@ -16,6 +16,9 @@
 
   <body>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <!-- navbar starts here -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigation">
       <div class="container-fluid">
@@ -36,6 +39,17 @@
             <li><%= link_to "Contact", simple_pages_contact_path %></li>
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Orders", orders_path %></li>
+          </ul>
+          <ul class="navbar-nav ml-auto" id="login">
+            <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+            </li>
+            <% else %>
+            <li class="nav-item">
+              <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+            </li>
+            <% end %>
           </ul>
           <div class="navbar-right" id="search-field">
             <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
