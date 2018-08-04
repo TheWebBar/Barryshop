@@ -25,3 +25,9 @@
 #login {
 	padding-top: 13px;
 }
+
+#notice_message, #alert_message {
+	padding-top: 71px;
+	margin: 0;
+	border: 0;
+}
