@@ -11,6 +11,7 @@ h1 {
 
 h2 {
   text-align: center;
+  padding-top: 75px;
 }
 
 #carouselExampleIndicators {
@@ -62,7 +63,7 @@ html, body {
 }
 
 #landing_page, #contact_page, #about_page {
-	background-image: url("landscape.jpg");
+	background-image: image-url("landscape.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
