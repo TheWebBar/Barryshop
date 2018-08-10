@@ -25,3 +25,5 @@
 #login {
 	padding-top: 13px;
 }
+
+*= require jquery.raty
