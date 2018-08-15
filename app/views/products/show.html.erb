@@ -39,11 +39,8 @@
   <%= render 'comments' %>
 </div><!-- end comment_section -->
 
+<div class="container-fluid" id="comment_pagination">
 
-<div class="container-fluid" id="user_comments">
-  <h2>User Comments</h2>
+  <%= will_paginate @comments %><!-- render page links in view -->
 
-  <p><%= @product.highest_rating_comment %></p>
-  <p><%= @product.lowest_rating_comment %></p>
-  
-</div><!-- end user_comments -->
+</div><!-- end comment_pagination -->
