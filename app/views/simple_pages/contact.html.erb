@@ -1,4 +1,4 @@
-<div class="page-wrap" id="contact_page">
+<div class="container-fluid" id="contact_page">
   <h1>Who are we?</h1>
   <div class="row" id="contact_content">
     <div class="col-sm-6">
@@ -7,13 +7,26 @@
     <div class="col-sm-6">
       <%= image_tag("sundown.jpg", height: '400', width: '800', class: "img-responsive") %>
     </div>
-</div><!-- end contact_page -->
+  </div>
+</div>
 
-<div class="page-wrap" id="mail_form">
+<div class="container-fluid" id="contact_us">
+  <h1>Contact Us</h1>
+  <div class="container-fluid" id="mail_form">
+    <%= flash[:notice] %>
+    <%= render 'contact' %>
+  </div>
+</div>
 
-<h1>Contact Us</h1>
 
-<%= flash[:notice] %>
+
+<!--<div class="page-wrap" id="mail_form">
+
+  <h1>Contact Us</h1>
+
+  <%= flash[:notice] %>
+
+  <%= render 'contact' %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div class="row">
