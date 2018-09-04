@@ -50,6 +50,8 @@ group :development, :test do
   gem 'sqlite3'
   # Use rspec for testing
   gem 'rspec-rails', '~> 3.7'
+  # Use rails-controller-testing for functional tests
+  gem 'rails-controller-testing' 
 end
 
 group :development do
@@ -68,4 +70,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Devise for authentication
 gem 'devise'
 
+#CanCan
 gem 'cancancan', '~> 1.10'
