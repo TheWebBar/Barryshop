@@ -51,7 +51,9 @@ group :development, :test do
   # Use rspec for testing
   gem 'rspec-rails', '~> 3.7'
   # Use rails-controller-testing for functional tests
-  gem 'rails-controller-testing' 
+  gem 'rails-controller-testing'
+  # Use FactoryBot to define factories for testing
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
