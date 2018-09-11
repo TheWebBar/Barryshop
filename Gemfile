@@ -74,3 +74,6 @@ gem 'devise'
 
 #CanCan
 gem 'cancancan', '~> 1.10'
+
+#Stripe for online payment
+gem 'stripe'
