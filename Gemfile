@@ -77,3 +77,6 @@ gem 'cancancan', '~> 1.10'
 
 #Stripe for online payment
 gem 'stripe'
+
+#Brakeman for security checks of code
+gem 'brakeman', '~> 4.3.1'
