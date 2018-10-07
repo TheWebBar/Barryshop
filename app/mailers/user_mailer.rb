@@ -7,10 +7,12 @@ class UserMailer < ApplicationMailer
         to: 'bardventure@web.de',
         subject: "A new contact form message from #{name}")
   end
-end
 
-def welcome(user)
+
+  def welcome(user)
   @appname = "Barryshop"
-  mail(to: user.email,
+    mail(to: user.email,
        subject: "Welcome to #{@appname}!")
+  end
+
 end
