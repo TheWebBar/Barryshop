@@ -80,3 +80,6 @@ gem 'stripe'
 
 #Brakeman for security checks of code
 gem 'brakeman', '~> 4.3.1'
+
+#Ruby MemCache Client
+gem 'dalli'
