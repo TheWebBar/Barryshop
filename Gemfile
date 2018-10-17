@@ -83,3 +83,6 @@ gem 'brakeman', '~> 4.3.1'
 
 #Ruby MemCache Client
 gem 'dalli'
+
+#Redis for Caching
+gem 'redis-rails'
