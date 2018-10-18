@@ -105,4 +105,7 @@ Rails.application.configure do
 
   #Dynamic links inside emails from development environment generate right URLs
   config.action_mailer.default_url_options = { host: 'barryshop.herokuapp.com' }
+
+  config.web_socket_server_url = "wss://barryshop.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://barryshop.herokuapp.com', 'http://barryshop.herokuapp.com']
 end
