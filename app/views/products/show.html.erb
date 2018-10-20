@@ -1,6 +1,6 @@
 <p class="notice"><%= notice %></p>
 
-<div class="container-fluid" id="show_product">
+<div class="container-fluid" id="show_product" data-product-id="<%= @product.id %>">
 
   <p>
     <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: "@product.product_image.url") %>
