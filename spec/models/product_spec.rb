@@ -1,9 +1,10 @@
 require 'rails_helper'
 
 describe Product do
-  let(:product) { Product.create!(name: "race bike", description: "ccc", image_url: "dd", colour: "dd", price: "2") }
+  let(:product) { FactoryBot.create(:product) }
 
-  let(:user) { User.create!(email: "abc@test.de", password: "123456")}
+  let(:user) { FactoryBot.create(:user)}
+
 
   before do
     product.comments.create!(rating: 1, user: user, body:"Awful bike!")
@@ -17,5 +18,21 @@ describe Product do
 
   it "is not valid without a name" do
     expect(Product.new(description: "Nice bike")).not_to be_valid
+  end
+
+  it "is not valid without a description" do
+    expect(Product.new(name: "Race bike")).not_to be_valid
+  end
+
+  it "is not valid without a image_url" do
+    expect(Product.new(name: "Race bike")).not_to be_valid
+  end
+
+  it "is not valid without a colour" do
+    expect(Product.new(name: "Race bike")).not_to be_valid
+  end
+
+  it "is not valid without a price" do
+    expect(Product.new(name: "Race bike")).not_to be_valid
   end
 end

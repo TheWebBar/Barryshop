@@ -20,6 +20,7 @@ class PaymentsController < ApplicationController
         user_id: @user.id,
         total: @product.price
       )
+      UserMailer.order_created(@user,@product).deliver_now
     end
 
     rescue Stripe::CardError => e
