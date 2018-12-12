@@ -3,29 +3,37 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
   font-family: Big Caslon, Book Antiqua, Palatino Linotype, serif;
-  color: #98ff98;
   text-align: center;
-  padding-top: 75px;
-  margin-top: 0px;
 }
 
 h2 {
   text-align: center;
 }
 
-#carouselExampleIndicators {
+#carousel_landing_page {
+  padding-top: 50px;
   margin: 0 auto;
   width: 30%;
 }
 
-#mail_form {
-  margin: 0 auto;
-  width: 40%;
+#header_about_page {
+  padding:0;
 }
 
 #carousel_images {
   width: 800px;
   height: 400px;
+}
+
+#about_page {
+	background-image: image-url("tent.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height:100%;
+  width: 100%;
+  padding: 60px;
+  color: white;
 }
 
 * {
@@ -68,20 +76,12 @@ html, body {
   margin:0;
 }
 
-#contact_content {
-  padding: 60px;
-}
-
-#contact_us {
-  padding-bottom: 60px;
-  background-color: grey;
-}
-
-#landing_page, #contact_page, #about_page {
-	background-image: image-url("landscape.jpg");
+#contact_page {
+	background-image: image-url("skitour.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height:100%;
   width: 100%;
+  padding: 60px;
 }

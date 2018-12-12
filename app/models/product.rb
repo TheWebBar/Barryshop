@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
 
-  has_many :comments
+  has_many :comments, dependent: :destroy
   validates :name,  presence: true
   validates :description, presence: true
   validates :image_url, presence: true

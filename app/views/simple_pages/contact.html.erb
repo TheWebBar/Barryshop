@@ -1,48 +1,11 @@
 <div class="container-fluid" id="contact_page">
-  <h1>Who are we?</h1>
-  <div class="row" id="contact_content">
+  <div class="row">
     <div class="col-sm-6">
-      <p>Carsten<br>Schanzenbachstr.<br>Munich</p>
+      <%= flash[:notice] %>
+      <%= render 'contact' %>
     </div>
     <div class="col-sm-6">
       <%= image_tag("sundown.jpg", height: '400', width: '800', class: "img-responsive") %>
     </div>
   </div>
 </div>
-
-<div class="container-fluid" id="contact_us">
-  <h1>Contact Us</h1>
-  <div class="container-fluid" id="mail_form">
-    <%= flash[:notice] %>
-    <%= render 'contact' %>
-  </div>
-</div>
-
-
-
-<!--<div class="page-wrap" id="mail_form">
-
-  <h1>Contact Us</h1>
-
-  <%= flash[:notice] %>
-
-  <%= render 'contact' %>
-
-<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-<div class="row">
-  <div class="form-group">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
-  </div>
-</div>
-<%= form.submit "Send", class: "form_label" %>
-<% end %>
-</div><!-- end mail_form -->

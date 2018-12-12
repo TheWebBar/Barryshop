@@ -1,9 +1,5 @@
-<p class="notice"><%= notice %></p>
-
-<h1>Products</h1>
-
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" id="product_index">
     <% cache(cache_key_for_products) do %>
       <%= render @products %>
     <% end %>
@@ -12,4 +8,6 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<% if user_signed_in? && current_user.admin? %>
+  <%= link_to 'New Product', new_product_path %>
+<% end %>

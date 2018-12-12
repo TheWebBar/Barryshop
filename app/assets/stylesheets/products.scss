@@ -1,12 +1,40 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#products_images {
-  width: 800px;
-  height: 400px;
+#product_index {
+  width: 80%;
+  margin: 0 auto;
 }
 
-#edit_page, #new_page, #show_product, #comment_section {
+#product_images {
+  width: 400px;
+  height: 267px;
+  padding: 15px;
+  margin: auto;
+  display: inline;
+}
+
+#product {
+  border: black 1px solid;
+  margin: 15px 50px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#show_product {
+  padding-top: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#comment_section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#edit_page, #new_page {
   width: 40%;
 }
 

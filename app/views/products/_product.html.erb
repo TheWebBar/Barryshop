@@ -1,10 +1,11 @@
-<div class="col-sm-2 col-md-4">
+<div class="col-sm-12 col-md-3" id="product">
   <% cache product do %>
-    <%= image_tag(product.image_url, class: "img-responsive", id: "products_images") %>
+    <%= image_tag(product.image_url, class: "img-responsive", id: "product_images") %>
     <a><h1><%= link_to product.name, product %></h1></a>
-    <p><%= product.description %></p>
-    <p><%= product.colour %></p>
-    <p><%= product.price %></p>
+    <p><%= product.price %> USD</p>
+  <% end %>
+
+  <% if signed_in? && current_user.admin? %>
     <p><%= link_to 'Show', product %></p>
     <p><%= link_to 'Edit', edit_product_path(product) %></p>
     <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
