@@ -1,0 +1,327 @@
+/* line 4, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#product_index {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 9, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#product_images {
+  width: 400px;
+  height: 267px;
+  padding: 15px;
+  margin: auto;
+  display: inline;
+}
+
+/* line 17, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#product {
+  border: black 1px solid;
+  margin: 15px 50px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* line 26, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#show_product {
+  padding-top: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 32, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 37, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#edit_page, #new_page {
+  width: 40%;
+}
+
+/* line 41, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#user_comments {
+  padding-top: 20px;
+}
+
+/* line 45, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_section {
+  padding-top: 50px;
+}
+
+/* line 49, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+}
+
+/* line 55, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination a, #comment_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 57, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 59, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 71, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 74, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/products.scss */
+#comment_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+/* line 1, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 34, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 38, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 43, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 48, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 54, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 61, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 71, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 77, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: Big Caslon, Book Antiqua, Palatino Linotype, serif;
+  text-align: center;
+}
+
+/* line 9, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 13, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+#carousel_landing_page {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 30%;
+}
+
+/* line 19, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+#header_about_page {
+  padding: 0;
+}
+
+/* line 23, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+#carousel_images {
+  width: 800px;
+  height: 400px;
+}
+
+/* line 28, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+#about_page {
+  background-image: url(/assets/tent-3a75f73c75ee9342d3668f24bff34c937d4e4f62b02c39627af6b74d9ceebca7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  color: white;
+}
+
+/* line 39, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+* {
+  margin: 0;
+}
+
+/* line 43, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 48, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  /*margin-bottom: -142px;*/
+}
+
+/* line 53, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 58, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 61, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.site-footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* line 68, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.alert {
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 74, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+.notice {
+  padding-top: 50px;
+  margin: 0;
+}
+
+/* line 79, /Users/carstenbarylski/Web_App_CF/Test_App/app/assets/stylesheets/simple_pages.scss */
+#contact_page {
+  background-image: url(/assets/skitour-57469bb42485ac73237a2a2f2b646846701d75e5a1f555de4c3482b2b6ba65f3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+}
+/* line 5, /Users/carstenbarylski/Test_App/app/assets/stylesheets/users.scss */
+#sign_up, #log_in, #password_reset {
+  margin: 0 auto;
+  width: 40%;
+}
+
+/* line 10, /Users/carstenbarylski/Test_App/app/assets/stylesheets/users.scss */
+#shared_links {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+#order_list {
+	text-align: center;
+}
+
+#search-field {
+	padding-top: 13px;
+}
+
+#login {
+	padding-top: 13px;
+}
+
+*= require jquery.raty
