@@ -1,7 +1,5 @@
 <div class="page-wrap" id="landing_page">
-
-  <!--<h1> Bar's Outdoor Shop</h1>
-  <h2> Welcome to a broad range of outdoor clothes and equipment!</h2>-->
+  <h1> Featured Products</h1>
   <div id="carousel_landing_page" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel_landing_page" data-slide-to="0" class="active"></li>
@@ -15,7 +13,7 @@
         <%= image_tag(product.image_url, class: "img-responsive", id: "carousel_images") %>
 
         <div class="carousel-caption d-none d-md-block">
-          <%= product.name %>
+          <%= link_to product.name, product %>
         </div>
       </div>
       <% end %>
@@ -29,7 +27,6 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-
   </div>
-
+  <h1>Welcome to a broad range of outdoor apparel</h1>
 </div>

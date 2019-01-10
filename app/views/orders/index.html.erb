@@ -1,19 +1,11 @@
 <div class="row">
   <% @orders.each do |order| %>
-    <div class="col-sm">
-      <h1>Order # <%= link_to order.id, product_path(order.product.id)%></h1>
-    </div>
-  <% end %>
-</div>
-
-<div class="row">
-  <% @orders.each do |order| %>
     <div class="col-sm" id="order_list">
       <h1>
         Order # <%= order.id %>:
         <%= link_to order.product.name, order %>
       </h1>
-      <p><%= order.product.description %></p>
+      <!--<p><%= order.product.description %></p>-->
       <strong>$ <%= order.product.price %></strong>
     </div><!-- /col -->
   <% end %>
