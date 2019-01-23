@@ -33,8 +33,6 @@ h2 {
 }
 
 #carousel_images {
-  /*width: 800px;
-  height: 400px;*/
   display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -64,9 +62,8 @@ html, body {
 
 .page-wrap {
   min-height: 100%;
-  /* equal to footer height */
-  /*margin-bottom: -142px;*/
 }
+
 .page-wrap:after {
   content: "";
   display: block;

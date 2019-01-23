@@ -150,14 +150,6 @@ describe ProductsController, type: :controller do
       end
     end
 
-    #context 'when a user saves an invalid product' do
-      #let(:product1) { Product.create!(name: "", description:"s", image_url:"mm", colour:"black", price:"23")}
-
-      #it 'redirects to new template' do
-        #post :create, params: {product: product1.attributes}
-        #expect(response).to render_template('new')
-      #end
-    #end
   end
 
   #####Test Update#####
@@ -176,13 +168,5 @@ describe ProductsController, type: :controller do
         end
       end
 
-      #context 'when a user saves an invalid product' do
-        #let(:product1) { Product.create!(name: "", description:"s", image_url:"mm", colour:"black", price:"23")}
-
-        #it 'redirects to new template' do
-          #post :create, params: {product: product1.attributes}
-          #expect(response).to render_template('new')
-        #end
-      #end
     end
 end
